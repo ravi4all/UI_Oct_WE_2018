@@ -1,0 +1,34 @@
+body {
+    background-image: url("https://icc-static-files.s3.amazonaws.com/ICC/photo/2018/09/18/31d77aed-4373-4e90-901b-46f6f102aa46/India-ODI.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+div {
+    height: 580px;
+    margin-bottom: 400px;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+}
+
+#div_1 {
+    background-image: url("https://www.sbs.com.au/yourlanguage/sites/sbs.com.au.yourlanguage/files/styles/full/public/indian_team_2.jpg?itok=Js19zBoi&mtime=1526607423");
+}
+
+#div_2 {
+    background-image: url("https://relaunch-live.s3.amazonaws.com/cms/media/images/1200x800/13699.jpg");
+}
+
+#div_3 {
+    background-image: url("https://www.goldenjeeto.com/blog/wp-content/uploads/2017/09/SJ-Sep-17-57.jpg");
+}
+
+#div_4 {
+    background-image: url("../../Images/WebImages/the-joker-black-white.jpeg");
+}
+
+#div_5 {
+    background-image: url("../../Images/WebImages/Terminator002.jpg")
+}
