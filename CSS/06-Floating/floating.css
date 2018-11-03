@@ -1,0 +1,31 @@
+/* Pseduo Elements - After and Before */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    background-color: green;
+}
+
+.col-1 {
+    float: left;
+    width: 40%;
+    /* background-color: lightblue; */
+}
+
+.col-2 {
+    float: right;
+    width: 40%;
+    /* background-color: red; */
+}
+
+.div_1 {
+    /* background-color: lightcoral; */
+}
+
+.blank {
+    clear: both;
+}
