@@ -1,0 +1,46 @@
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.list>li {
+    display: inline-block;
+    width: 14%;
+    text-align: center;
+    background-color: lightblue;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    display: none;
+}
+
+.dropdown li {
+    background-color: lightblue;
+    border-bottom: 1px solid red;
+}
+
+ul li:hover .dropdown {
+    display: block;
+}
+
+.list>.menu:after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-top-color: #000;
+    right: 0px;
+    top: 20px;
+}
