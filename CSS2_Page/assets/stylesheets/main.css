@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Nunito', sans-serif;
+    background-color: #E3E3E3;
 }
 
 ul {
@@ -20,6 +21,12 @@ h4,
 h5,
 h6 {
     margin-top: 0px;
+    font-family: 'Crimson Text', serif;
+    color: #232526;
+}
+
+p {
+    color: #40444b;
 }
 
 .left {
@@ -36,8 +43,47 @@ h6 {
     clear: both;
 }
 
+#header {
+    margin-bottom: 15px;
+}
+
 #header .header_top {
+    padding: 10px;
     background-color: #0A1529;
+}
+
+#header .menu_icon {
+    margin-right: 20px;
+}
+
+#header .menu_icon .bar {
+    border: 1px solid red;
+    width: 23px;
+    margin-top: 8px;
+    position: relative;
+}
+
+#header .menu_icon .bar::before,
+#header .menu_icon .bar:after {
+    content: "";
+    position: absolute;
+    border: 1px solid red;
+    right: -1px;
+}
+
+#header .menu_icon .bar::before {
+    width: 15px;
+    top: 5px;
+}
+
+#header .menu_icon .bar:after {
+    width: 20px;
+    top: 10px;
+}
+
+#header .logo h1 {
+    font-size: 24px;
+    margin-bottom: 0px;
 }
 
 #header .logo a {
@@ -60,5 +106,65 @@ h6 {
 #header ul li {
     display: inline-block;
     text-transform: uppercase;
+    padding-top: 7px;
     margin: 0px -2px;
+}
+
+#header .search {
+    padding: 5px 10px;
+}
+
+#header .search i {
+    color: #edeff0;
+}
+
+#header .user {
+    padding: 5px 10px;
+}
+
+#header .user i {
+    color: red;
+}
+
+#content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+#content p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#content a {
+    color: #232526;
+}
+
+#main {
+    width: 72%;
+}
+
+#section_1 img {
+    width: 100%;
+}
+
+#section_2 {}
+
+#section_3 ul {
+    list-style: disc;
+}
+
+#section_3 ul li {
+    display: inline-block;
+    width: 48%;
+    margin: 0px -2px 10px;
+    padding-left: 15px;
+}
+
+#sidebar {
+    width: 25%;
+}
+
+#sidebar img {
+    width: 100%;
 }
