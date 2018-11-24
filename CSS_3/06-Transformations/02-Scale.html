@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* .animate {
+            height: 300px;
+            background-color: lightcoral;
+            width: 300px;
+        } */
+        
+        .div {
+            border: 2px solid #000;
+        }
+        
+        .animate {
+            transition-duration: 5s;
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: linear; */
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        
+        .div:hover .animate {
+            transform: scale(2, 2) translate(500px, 20px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Transform Translate</h1>
+
+    <div class="div">
+        <img src="../../Images/hulk5-18463.gif" class="animate" alt="">
+    </div>
+    <div>
+        <h2>This is a heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam enim cumque aperiam omnis. Dignissimos pariatur illum ex quos laborum, dolor, tenetur velit autem rerum doloremque, omnis atque dolore excepturi id! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Harum, aliquid corporis. Eligendi minima explicabo esse quos repellat labore odit rerum obcaecati adipisci voluptatibus iusto quod, tempore assumenda aliquid, nihil ipsa!
+        </p>
+    </div>
+
+</body>
+
+</html>
