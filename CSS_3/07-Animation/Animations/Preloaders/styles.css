@@ -1,0 +1,89 @@
+#loader_1 span {
+    height: 100px;
+    width: 100px;
+    border: 10px solid red;
+    border-color: red transparent blue;
+    display: block;
+    border-radius: 50%;
+    animation: loader_1 1s infinite;
+}
+
+@keyframes loader_1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loader_2 {
+    width: 300px;
+    border: 2px solid red;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#loader_2 span {
+    display: block;
+    height: 40px;
+    width: 20%;
+    background-color: lightblue;
+    animation: loader_2 2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loader_2 {
+    0% {
+        width: 20%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#loader_3 {
+    position: relative;
+    perspective: 300px;
+}
+
+.sun {
+    position: relative;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    background-image: url("https://vignette.wikia.nocookie.net/vsbattles/images/c/ca/Render_sun.png/revision/latest?cb=20160310013337");
+    background-size: 100% 100%;
+}
+
+.earth {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 100px;
+    left: 20%;
+    background-image: url("../../../../Images/00-22.gif");
+    background-size: 100% 100%;
+    animation: earth 10s infinite linear;
+}
+
+@keyframes earth {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(650px);
+    }
+    50% {
+        z-index: -1;
+        transform: translateZ(-100px);
+    }
+    75% {
+        z-index: -1;
+        transform: translateX(-300px) translateZ(-100px);
+    }
+    100% {
+        z-index: -1;
+        transform: translateX(0px) translateZ(0px);
+    }
+}
