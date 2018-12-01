@@ -1,0 +1,62 @@
+.row {
+    border: 5px solid blue;
+    height: 2000px;
+    display: flex;
+    /* Justify-content -> Adjust elements from left to right */
+    /* justify-content: center; */
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* justify-content: flex-end; */
+    /* Align Items -> Adjust elements from top to bottom */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: stretch;
+    align-content: stretch;
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    flex-wrap: wrap;
+}
+
+.col {
+    /* margin: 0px 20px; */
+    padding: 10px;
+    /* border: 2px solid green; */
+    background-color: lightgray;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.col-1 {
+    flex-basis: 20%;
+    /* width: 20%; */
+    /* align-self: center; */
+}
+
+.col-2 {
+    flex-basis: 40%;
+    /* width: 40%; */
+}
+
+.col-3 {
+    flex-basis: 20%;
+    /* width: 20%; */
+    /* align-self: flex-end; */
+}
+
+img {
+    width: 100%;
+}
+
+#main {
+    padding: 20px;
+    border: 2px solid red;
+}
+
+#main .col {
+    border: 2px solid green;
+}
+
+#sidebar {
+    border: 2px solid blue;
+}
