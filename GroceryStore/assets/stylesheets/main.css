@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #E3E3E3;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    font-family: 'Crimson Text', serif;
+    color: #232526;
+}
+
+p {
+    color: #40444b;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1130px;
+    margin: 0 auto;
+}
