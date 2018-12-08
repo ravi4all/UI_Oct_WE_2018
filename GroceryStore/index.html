@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/stylesheets/main.css">
 </head>
 
@@ -16,23 +17,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col logo">
-                        <a href="#">
-                            <h1>
-                                <span class="logo_highlight">G</span>rocery
-                                <span class="logo_highlight">S</span>hoppy</a>
-                        </h1>
-                        <img src="assets/images/logo2.png" alt="">
+                        <a href="#" class="logo_link">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="logo_text">
+                                        <h1>
+                                            <span class="logo_highlight">G</span>rocery
+                                            <span class="logo_highlight">S</span>hoppy
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="logo_img">
+                                    <img src="assets/images/logo2.png" alt="">
+                                </div>
+                            </div>
                         </a>
                     </div>
 
-                    <div class="col">
+                    <div class="col user_section">
                         <div class="user_nav">
                             <ul>
-                                <li><a href="#">Shop Locator</a></li>
-                                <li><a href="#">Track Order</a></li>
-                                <li><a href="#">001 234 5678</a></li>
-                                <li><a href="#">Sign In</a></li>
-                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Shop Locator</a></li>
+                                <li><a href="#"><i class="fas fa-truck"></i> Track Order</a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i> 001 234 5678</a></li>
+                                <li><a href="#"><i class="fas fa-unlock"></i> Sign In</a></li>
+                                <li><a href="#"><i class="fas fa-edit"></i> Sign Up</a></li>
                             </ul>
                         </div>
                         <div class="row">
@@ -45,13 +54,46 @@
                                 </form>
                             </div>
                             <div class="col cart">
-                                <i class="fas fa-cart-arrow-down"></i>
+                                <button class="btn">
+                                    <i class="fas fa-cart-arrow-down"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
+        <nav id="main-navigation">
+            <div class="container">
+                <div class="row justify-between">
+                    <div class="col col-1">
+                        <select>
+                                    <option>All Categories</option>
+                                    <option value="Kitchen">Kitchen</option>
+                                    <option value="hh">Household</option>
+                                    <option value="sb">Snacks & Beverages</option>
+                                    <option value="">Personal Care</option>
+                                    <option value="">Kitchen</option>
+                                    <option value="">Household</option>
+                                    <option value="">Snacks & Beverages</option>
+                                    <option value="">Personal Care</option>
+                                </select>
+                    </div>
+                    <div class="col col-2">
+                        <ul class="row">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li class="dropdown"><a href="#">Kitchen</a></li>
+                            <li class="dropdown"><a href="#">Household</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li class="dropdown"><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <footer>
 
