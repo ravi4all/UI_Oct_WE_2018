@@ -1,0 +1,499 @@
+/* ==========================================================================
+	Global Settings
+========================================================================== */
+
+
+/*
+* Boxsizing set to border box http://css-tricks.com/box-sizing/
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+* Body settings, change it as required
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0px;
+}
+
+
+/*
+* Headings
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    margin-top: 0px;
+}
+
+
+/*
+* Paragraphs
+*/
+
+p {
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+
+/*
+* Links
+*/
+
+a {
+    color: #2ba6cb;
+    text-decoration: none;
+    line-height: inherit;
+    transition: 0.5s;
+}
+
+a:hover {
+    /*color: #2795b6;*/
+    text-decoration: none;
+}
+
+a:focus {
+    color: #2ba6cb;
+    outline: none;
+    text-decoration: none;
+}
+
+p a,
+p a:visited {
+    line-height: inherit;
+}
+
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+}
+
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+	Helper classes
+========================================================================== */
+
+
+/*
+* Floats
+*/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/*
+* Text Alignment
+*/
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/*
+* Image Alignment
+*/
+
+img.alignleft {
+    float: left;
+    margin: 0 10px 10px 0;
+    display: inline;
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0px 10px 10px;
+    display: inline;
+}
+
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+
+/*
+* Image replacement
+*/
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+* Clearfix: contain floats
+*/
+
+
+/*
+* More semantic version as described in http://css-tricks.com/snippets/css/clear-fix/
+*/
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*
+* overflow method for clearing floats
+*/
+
+.floatbox {
+    overflow: hidden;
+}
+
+
+/*
+* older method of adding empty tags for clearing
+*/
+
+.clear {
+    clear: both;
+    height: 1px;
+    line-height: 1px;
+}
+
+
+/*
+* Chromeframe
+*/
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/*
+* Other
+*/
+
+
+/* ==========================================================================
+	Layout
+========================================================================== */
+
+
+/* Container ---------------------- */
+
+#container {}
+
+
+/* Header ---------------------- */
+
+#header {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    padding: 8px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #fff;
+}
+
+#header h1 {
+    margin-bottom: 0px;
+}
+
+#header .logo a {
+    font-family: 'Racing Sans One', cursive;
+    color: #C0C6C6;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#header a:hover {
+    color: #fff;
+}
+
+
+/* Banner ---------------------- */
+
+#banner {}
+
+
+/* Main Navigation ---------------------- */
+
+#main-navigation {}
+
+#main-navigation .collapse {
+    justify-content: space-between;
+}
+
+#main-navigation ul li {
+    margin: 0px 15px;
+}
+
+#main-navigation ul li a {
+    color: #bbb;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 8px;
+    display: block;
+}
+
+
+/* Content ---------------------- */
+
+#content {}
+
+
+/* Main ---------------------- */
+
+#main {}
+
+
+/* Sidebar ---------------------- */
+
+#sidebar {}
+
+
+/* Footer ---------------------- */
+
+#footer {}
+
+
+/* ==========================================================================
+	Common Functionalities & UI Elements
+========================================================================== */
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #006B61;
+    font-size: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    border: 2px solid #006B61;
+    bottom: 0px;
+    width: 12%;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -6%;
+}
+
+
+/* Features */
+
+#features {
+    background-color: #F5F5F5;
+    padding: 40px 0px;
+}
+
+#features .box {
+    padding: 25px;
+    text-align: center;
+    background-color: #fff;
+    transition: 1s;
+    margin: 0px 0px 20px;
+    position: relative;
+}
+
+#features .box:hover {
+    background-color: #49B2A8;
+}
+
+#features .box .image {
+    margin-bottom: 25px;
+}
+
+#features .box h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #006B61;
+}
+
+#features .box:hover h4,
+#features .box:hover p {
+    color: #fff;
+}
+
+#features .box:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 20px solid;
+    border-color: #006B61 transparent transparent;
+    transform: rotate(44deg);
+}
+
+#features .box::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    right: -21px;
+    border: 20px solid;
+    border-color: #F5F5F5 transparent transparent;
+    transform: rotate(-136deg);
+}
